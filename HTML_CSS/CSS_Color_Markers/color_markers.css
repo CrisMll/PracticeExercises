@@ -1,3 +1,22 @@
 h1{
     text-align: center;
 }
+/*creating markers, with divs*/
+.marker{
+    /*background-color: red;*/
+    height: 25px;
+    width: 200px;
+    /*To center the marker, set its margin property to auto. 
+    This sets all margins to auto, centered in relation to its parent.
+    When I added the other divs, they have no space between, so I set 10px auto to separate them*/
+    margin: 10px auto;
+}
+.one{
+    background-color: red;
+}
+.two{
+    background-color: greenyellow;
+}
+.three{
+    background-color: rgb(4, 4, 251);
+}
