@@ -1,6 +1,10 @@
 h1{
     text-align: center;
 }
+.container{
+    background-color: rgb(255,255,255);
+    padding: 10px 0;
+}
 /*creating markers, with divs*/
 .marker{
     /*background-color: red;*/
@@ -11,12 +15,28 @@ h1{
     When I added the other divs, they have no space between, so I set 10px auto to separate them*/
     margin: 10px auto;
 }
-.one{
-    background-color: red;
+/*COLORING THE MARKERS*/
+/*
+.yellow{
+    background-color: rgb(225, 255, 1)
 }
-.two{
-    background-color: greenyellow;
+.blue{
+    background-color: rgb(0, 127, 255);
 }
-.three{
-    background-color: rgb(4, 4, 251);
+.pink{
+    background-color: rgb(255, 0, 127);
+}*/
+
+/*linear-gradient for more realistic effects*/
+.yellow{
+    background: linear-gradient(180deg, rgb(160, 174, 32) 0%,
+    rgb(246, 217, 104) 50%, rgb(149, 165, 31) 100%);
+}
+.blue{
+    background: linear-gradient(180deg, rgb(32, 160, 174) 0%,
+    rgb(104, 217, 246) 50%, rgb(31, 165, 149) 100%);
+}
+.pink{
+    background: linear-gradient(180deg, rgb(174, 32, 160) 0%,
+    rgb(246, 104, 217) 50%, rgb(149, 31, 165) 100%);
 }
