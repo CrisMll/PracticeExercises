@@ -1,1 +1,0 @@
-Fizzbuzz exercise
