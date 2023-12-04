@@ -1,0 +1,93 @@
+body {
+    background-image: linear-gradient( 115deg, rgba(43, 43, 105, 0.8), rgba(136, 136, 206, 0.7) ),url(https://www.enter.co/wp-content/uploads/2020/02/Programacion2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    color: #ece6e6;
+    font-family: 'Cascadia Code','Arial';
+}
+.header{
+    text-align: center;
+    padding: 5px;
+}
+#title{
+    margin: 10px;
+}
+#description{
+    font-family:Roboto, monospace;
+    font-style: italic;
+    margin-top: 5px;
+}
+@media (min-width: 768px) {
+    .container {
+    max-width: 720px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+    max-width: 540px;
+    }
+}
+.container{
+    margin: 5em auto;
+    background-color: rgba(44, 44, 80, 0.85);
+    width: 100%;
+    min-width: 30%;
+    border-radius: 20px;
+}
+.survey-form{
+    padding: 20px 20px;
+}
+.survey-form textarea{
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    font-size: large;
+}
+.form-group{
+    width: 100%;
+    margin: 1rem auto 1rem auto;
+    padding: 0.4rem 0.4rem;
+    box-sizing: border-box;
+}
+.form-group input{
+    margin-bottom: 20px
+}
+.label-inline{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 1rem;
+}
+.input-interest{
+    display: inline-block;
+    align-items: center;
+}
+.submit-button{
+    display: block;
+    width: 100%;
+    margin: auto;
+    background:#2b854d;
+    color: #ece6e6;
+    font-family: 'Cascadia code';
+    font-size: 1em;
+    padding: 0.75em;
+    border-radius: 10px;
+    border-style: none;
+}
+.submit-button:hover{
+    color: rgb(27, 23, 24);
+    font-weight:bolder;
+}
+option{
+    font-family: 'Cascadia Code', roboto;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+}
+span{
+    font-family: 'Roboto';
+    font-style: italic;
+}

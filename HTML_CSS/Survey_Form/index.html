@@ -7,67 +7,81 @@
     <title>CodingCamp Survey Form</title>
 </head>
 <body>
-    <main>
-        <header>
-            <h1 id="title">CodingCamp Survey Form</h1>
-            <p id="description">Thank you for taking the time to help us improve the platform</p>
-        </header>
-        <section>
-            <form action="" id="survey-form">
-                <fieldset class="personal-info">
-                    <label for="name" id="name-label"> Name: 
-                        <input type="text" name="" id="name" placeholder="Enter your name" required>
-                    </label> 
-                    <label for="email" id="email-label"> Email: 
-                        <input type="email" name="email" id="email" pattern="[a-zA-Z0._-]+@[a-zA-Z]+\.[a-zA-Z]{2,}"
-                        placeholder="Enter your email" required>
-                    </label> 
-                    <label for="number" id="number-label"> Age: 
-                        <input type="number" name="age" id="number" min="13" max="120" placeholder="Age" required>
-                    </label>
-                    <label for="dropdown" id="dropdown-label"> What is the reason for using our application? 
-                        <select name="options" id="dropdown">
-                            <option value="">Select one</option>
-                            <option value="1">I'm a student</option>
-                            <option value="2">I'm a Professional</option>
-                            <option value="3">I just use it as a hobby</option>
-                            <option value="4">Other</option>
-                        </select>
-                    </label>
-                    <label for="female">
-                        <input type="radio" name="gender" id="female" value="female"> Female
-                    </label>
-                    <label for="male">
-                        <input type="radio" name="gender" id="male" value="male"> Male
-                    </label>
-                    <label for="other">
-                        <input type="radio" name="gender" id="other" value="other"> Other
-                    </label>
-                    <label for="not-say">
-                        <input type="radio" name="gender" id="not-say" value="not-say"> Prefer not to say
-                    </label>
-                    <legend id="legend">Please, select one</legend>
-                </fieldset>
-                <fieldset class="profile">
-                    <label for="checkbox-projects"></label> Which profile do you have? (Check all that apply)
-                    <input type="checkbox" name="frontend" id="checkbox-projects" value="Front-end-Projects"> Front-end Projects
-                    <input type="checkbox" name="backend" id="checkbox-projects" value="Back-end-Projects"> Back-end Projects
-                    <input type="checkbox" name="database" id="checkbox-projects" value="Database-Languages"> Database Languages
-                    <input type="checkbox" name="systems-admin" id="checkbox-projects" value="Systems-Administration"> Systems Administration
-                </fieldset>
-                <fieldset class="suggestions">
-                    <label for="textarea"> Any comments or suggestions?
-                        <textarea name="suggestions" id="textarea" cols="40" rows="6" placeholder="Enter your comments here..."></textarea>
-                    </label>
-                </fieldset>
-                <label for="submit">
-                    <input type="submit" value="Submit" id="submit">
-                </label>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>Thank you for visiting us ❤️</p>
-    </footer>
+    <div class="container">
+        <main>
+            <header class="header">
+                <h1 id="title">CodingCamp Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </header>
+            <section>
+                <form action="post" id="survey">
+                    <div class="survey-form">
+                        <label for="name" id="name-label"> Name: 
+                            <input type="text" name="name" id="name" class="form-group" placeholder="Enter your name" required>
+                        </label> 
+                        <label for="email" id="email-label"> Email: 
+                            <input type="email" name="email" id="email" class="form-group" pattern="[a-zA-Z0._-]+@[a-zA-Z]+\.[a-zA-Z]{2,}"
+                            placeholder="Enter your email" required>
+                        </label> 
+                        <label for="number" id="number-label"> Age: 
+                            <input type="number" name="age" id="number" class="form-group" min="13" max="120" placeholder="Age" required>
+                        </label>
+                        <p>Please, select your gender identity:</p>
+                        <label for="female" class="label-inline">  
+                            <input type="radio" name="gender" id="female" value="female" class="gender" >Female
+                        </label>
+                        <label for="male" class="label-inline">
+                            <input type="radio" name="gender" id="male" value="male" class="gender">Male
+                        </label>
+                        <label for="other" class="label-inline">
+                            <input type="radio" name="gender" id="other" value="other" class="gender">Other
+                        </label>
+                        <label for="not-say" class="label-inline">
+                            <input type="radio" name="gender" id="not-say" value="not-say" class="gender" checked> Prefer not to say
+                        </label>
+                    </div>      
+                    <div class="survey-form">
+                        <p> What is the reason for using our application? </p>
+                        <label for="profile" id="dropdown-label">
+                            <select name="options" id="dropdown" name="profile" class="form-group" required>
+                                <option disabled selected value>(Select one)</option>
+                                <option value="student">I'm a student</option>
+                                <option value="professional">I'm a Professional</option>
+                                <option value="hobby">I just use it as a hobby</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="survey-form">
+                        <p>Which profile do you have?<span> ( Check all that apply )</span></p>
+                        <label class="label-inline">
+                            <input type="checkbox" name="interest" value="Front-end-Projects" class="input-interest" checked>Front-end Projects
+                        </label>
+                        <label class="label-inline">
+                            <input type="checkbox" name="interest" value="Back-end-Projects" class="input-interest">Back-end Projects
+                        </label>
+                        <label class="label-inline"> 
+                            <input type="checkbox" name="interest" value="Database-Languages" class="input-interest">Database Languages
+                        </label> 
+                        <label class="label-inline">
+                            <input type="checkbox" name="interest" value="Systems-Administration" class="input-interest">Systems Administration
+                        </label> 
+                    </div>
+                    <div class="survey-form">
+                        <p> Any comments or suggestions?</p>
+                        <label for="textarea">
+                            <textarea name="suggestions" id="textarea" cols="40" rows="6" placeholder="Enter your comments here..." class="input-suggestions"></textarea>
+                        </label>
+                    </div>
+                    <div class="survey-form">
+                        <button type="submit" id="submit" class="submit-button"> Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Thank you for visiting us ❤️</p>
+        </footer>
+    </div>
 </body>
 </html>
