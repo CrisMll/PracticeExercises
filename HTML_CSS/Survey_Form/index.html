@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CodingCamp Survey Form</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">CodingCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <section>
+            <form action="" id="survey-form">
+                <fieldset class="personal-info">
+                    <label for="name" id="name-label"> Name: 
+                        <input type="text" name="" id="name" placeholder="Enter your name" required>
+                    </label> 
+                    <label for="email" id="email-label"> Email: 
+                        <input type="email" name="email" id="email" pattern="[a-zA-Z0._-]+@[a-zA-Z]+\.[a-zA-Z]{2,}"
+                        placeholder="Enter your email" required>
+                    </label> 
+                    <label for="number" id="number-label"> Age: 
+                        <input type="number" name="age" id="number" min="13" max="120" placeholder="Age" required>
+                    </label>
+                    <label for="dropdown" id="dropdown-label"> What is the reason for using our application? 
+                        <select name="options" id="dropdown">
+                            <option value="">Select one</option>
+                            <option value="1">I'm a student</option>
+                            <option value="2">I'm a Professional</option>
+                            <option value="3">I just use it as a hobby</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female"> Female
+                    </label>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male"> Male
+                    </label>
+                    <label for="other">
+                        <input type="radio" name="gender" id="other" value="other"> Other
+                    </label>
+                    <label for="not-say">
+                        <input type="radio" name="gender" id="not-say" value="not-say"> Prefer not to say
+                    </label>
+                    <legend id="legend">Please, select one</legend>
+                </fieldset>
+                <fieldset class="profile">
+                    <label for="checkbox-projects"></label> Which profile do you have? (Check all that apply)
+                    <input type="checkbox" name="frontend" id="checkbox-projects" value="Front-end-Projects"> Front-end Projects
+                    <input type="checkbox" name="backend" id="checkbox-projects" value="Back-end-Projects"> Back-end Projects
+                    <input type="checkbox" name="database" id="checkbox-projects" value="Database-Languages"> Database Languages
+                    <input type="checkbox" name="systems-admin" id="checkbox-projects" value="Systems-Administration"> Systems Administration
+                </fieldset>
+                <fieldset class="suggestions">
+                    <label for="textarea"> Any comments or suggestions?
+                        <textarea name="suggestions" id="textarea" cols="40" rows="6" placeholder="Enter your comments here..."></textarea>
+                    </label>
+                </fieldset>
+                <label for="submit">
+                    <input type="submit" value="Submit" id="submit">
+                </label>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Thank you for visiting us ❤️</p>
+    </footer>
+</body>
+</html>
