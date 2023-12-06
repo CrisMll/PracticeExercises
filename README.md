@@ -1,6 +1,6 @@
 # Coding Practice Exercises 🖥️
 
-Welcome to my repository. This space is dedicated to organising and documenting my practice exercises of what I'm learning, whether in class or in courses by myself.
+Welcome to my repository. This space is dedicated to coding and documenting my practice exercises of what I'm learning, whether in class or in courses by myself.
 
 ## Languages:
 
