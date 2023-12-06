@@ -23,7 +23,7 @@ I usually use Visual Studio Code to do my projects.
 
 ## Note:
 
-This repository is a personal organizational tool and not intended as a comprehensive guide or tutorial for others. However, if you come across any errors or have suggestions for improvement, feel free to contact me. Your feedback is greatly appreciated! 😊
+This repository is a personal organizational tool and not intended as a guide or tutorial for others. However, if you come across any errors or have suggestions for improvement, feel free to contact me. Your feedback is greatly appreciated! 😊
 
 <hr>
 
