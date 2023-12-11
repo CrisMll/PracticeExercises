@@ -5,8 +5,14 @@ body{
     padding: 10px;
     margin-top: 20px;
 }
+
+:root{
+    --colorFondo:rgb(228, 228, 228);
+    --colorFoto:rgb(235, 232, 232);
+
+}
 .container{
-    background-color: rgb(228, 228, 228);
+    background-color: var(--colorFoto);
     border-radius: 20px;
     margin: 20px 0 20px 0;
     padding-bottom: 20px;
@@ -25,7 +31,7 @@ body{
 }
 #photo{
     display: block;
-    background-color: rgb(235, 232, 232);
+    background-color: var(--colorFondo);
     margin: 0 10px 20px 10px;
     padding: 10px 10px 0 10px;
     text-align: center;
