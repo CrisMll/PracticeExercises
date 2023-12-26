@@ -19,7 +19,7 @@ Welcome to my repository. This space is dedicated to coding and documenting my p
 
 ## Development Tools:
 
-I usually use Visual Studio Code to do my projects.
+I usually use Visual Studio Code, Wamp64 and MySQL to do my projects.
 
 ## Note:
 
@@ -39,7 +39,7 @@ This repository is a personal organizational tool and not intended as a guide or
 - Python
 - PHP
 
-## Enfoque de Aprendizaje:
+## Enfoque:
 
 - Desarrollo web
 - Algoritmos y estructuras de datos
@@ -47,7 +47,7 @@ This repository is a personal organizational tool and not intended as a guide or
 
 ## Herramientas de Desarrollo:
 
-Normalmente, utilizo Visual Studio Code para los proyectos.
+Normalmente, utilizo Visual Studio Code para los proyectos. También Wamp64 y MySQL.
 
 ## Nota:
 
