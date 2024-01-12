@@ -1,0 +1,36 @@
+body {
+    font-family: system-ui, -apple-system, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#contenedor-dado {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+#dado {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+    margin:auto;
+}
+#dado.girar {
+    animation: spin 1s ease-in-out;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(720deg); }
+}
+button {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
